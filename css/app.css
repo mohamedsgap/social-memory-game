@@ -160,3 +160,12 @@ h1 {
 .hide {
   display: none;
 }
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-left: 39em;
+  color: #428cf4;
+  font-size: 19px;
+}
