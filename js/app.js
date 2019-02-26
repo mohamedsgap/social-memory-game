@@ -57,3 +57,18 @@ during playing the game!
 let time= 0;
 let clockOff= true;
 let clockId;
+
+
+// create a deck variable to store elements with deck class!
+const deck= document.querySelector('.deck');
+
+// create a function to shuffle tke cards every new game!
+
+function shuffleDeck() {
+  const cardsForShuffling= Array.from(document.querySelectorAll('.deck li'));
+  const shuffledCards= shuffle(cardsForShuffling);
+  for(card of shuffledCards){
+    deck.appendChild(card);
+  }
+}
+ shuffleDeck();
