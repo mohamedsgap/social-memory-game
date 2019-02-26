@@ -107,3 +107,56 @@ h1 {
     float: right;
     cursor: pointer;
 }
+
+.backgroundModel{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.bodyModel {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  /*height: 400px;*/
+  background: #ffffff;
+  transform: translate(-50%, -70%);
+  border-radius: 10%;
+  background-color:#777799;
+}
+.headModel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  border-bottom: 3px solid yellow;
+  color: #FFFFFF;
+}
+.closeModel {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.statsModel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  border-bottom: 3px solid yellow;
+  color: #FFFFFF;
+}
+.buttonsModel{
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+}
+.buttonModel {
+  width: 60px;
+  height: 30px;
+  border-radius: 3%;
+}
+.hide {
+  display: none;
+}
