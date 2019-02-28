@@ -258,4 +258,9 @@ document.querySelector('.restart').addEventListener('click', resetGame);
    resetCards();
  }
 
- 
+function resetCards() {
+  const cards= document.querySelectorAll('.decl li');
+  for (card of cards){
+    card.className= 'card';
+  }
+}
