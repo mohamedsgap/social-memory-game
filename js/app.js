@@ -249,3 +249,13 @@ function resetGame() {
 }
 
 document.querySelector('.restart').addEventListener('click', resetGame);
+
+
+ function gameOver() {
+   stopClock();
+   printModelStats();
+   toggleModel();
+   resetCards();
+ }
+
+ 
