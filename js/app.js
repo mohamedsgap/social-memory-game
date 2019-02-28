@@ -140,3 +140,11 @@ function isMatch() {
    const movesCount= document.querySelector('.moves');
    movesCount.innerHTML= moves;
  }
+
+// the next function to handle score
+
+ function checkingScore(){
+   if(moves===16 || moves === 24){
+     removingStar();
+   }
+ }
