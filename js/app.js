@@ -72,3 +72,6 @@ function shuffleDeck() {
   }
 }
  shuffleDeck();
+
+// adding an event listener card on the deck
+deck.addEventListener('click', appearCard);
