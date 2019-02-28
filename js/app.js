@@ -182,6 +182,6 @@ function showTime() {
   }
 }
 
-function stopClock {
+function stopClock() {
   clearInterval(clockId);
 }
