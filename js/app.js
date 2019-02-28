@@ -217,3 +217,10 @@ function getStars() {
   console.log(starCount);
   return starCount;
 }
+
+// event listeners to the model
+document.querySelector('.cancelModel').addEventListener('click', function(){
+  toggleModel();
+});
+
+document.querySelector('.replayModel').addEventListener('clcik', replayGame);
