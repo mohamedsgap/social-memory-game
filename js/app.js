@@ -185,3 +185,23 @@ function showTime() {
 function stopClock() {
   clearInterval(clockId);
 }
+
+// toggle the model
+
+function toggleModel() {
+  const model= document.querySelector('.backgroundModel');
+  model.classList.toggle('hide');
+}
+
+// print all score info on the model
+
+function printModelStats() {
+  const timeStats= document.querySelector('.timeModel');
+  const clockTime= document.querySelector('.clock').innerHTML;
+  const movesStats= document.querySelector('.movesModel');
+  const starsStats= document.querySelector('.starsModel');
+  const stars= getStars();
+  timeStat.innerHTML= `Time = ${clockTime}`;
+  movesStats.innerHTML= `Moves = ${moves}`;
+  starsStats.innerHTML= `Stars = ${stars}`;
+}
