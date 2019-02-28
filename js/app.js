@@ -201,7 +201,7 @@ function printModelStats() {
   const movesStats= document.querySelector('.movesModel');
   const starsStats= document.querySelector('.starsModel');
   const stars= getStars();
-  timeStat.innerHTML= `Time = ${clockTime}`;
+  timeStats.innerHTML= `Time = ${clockTime}`;
   movesStats.innerHTML= `Moves = ${moves}`;
   starsStats.innerHTML= `Stars = ${stars}`;
 }
