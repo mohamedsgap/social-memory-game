@@ -133,3 +133,10 @@ function isMatch() {
          }, 1000);
        }
      }
+
+// create a function to increase moves!
+ function addMoves() {
+   moves +=1;
+   const movesCount= document.querySelector('.moves');
+   movesCount.innerHTML= moves;
+ }
