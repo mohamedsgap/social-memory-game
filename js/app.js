@@ -224,3 +224,28 @@ document.querySelector('.cancelModel').addEventListener('click', function(){
 });
 
 document.querySelector('.replayModel').addEventListener('clcik', replayGame);
+
+// function to reset the game!
+
+function resetGame() {
+ // reset time
+  stopClock();
+  clockOff= true;
+  time= 0;
+  showTime();
+  // reset moves
+ moves= 0;
+ document.querySelector('.moves').innerHTML= moves;
+  // reset stars
+  stars= 0;
+  const starsList= document.querySelectorAll('.stars li');
+  for (star of starsList){
+    star.style.display= 'inline';
+  }
+  // reset matching
+  matched= 0;
+  shuffleDeck();
+  resetCards();
+}
+
+document.querySelector('.restart').addEventListener('click', resetGame);
