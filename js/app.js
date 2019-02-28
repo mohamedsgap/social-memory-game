@@ -159,3 +159,13 @@ function removingStar(){
     }
   }
 }
+
+// calculte the time during game playing
+
+function clockBegins () {
+  clockId= setInterval(function(){
+    time +=1;
+    showTime();
+    console.log(time);
+  }, 1000);
+}
