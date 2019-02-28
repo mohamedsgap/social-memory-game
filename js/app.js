@@ -109,3 +109,18 @@ function addToggledCard(press){
   toggledCards.push(press);
   console.log(toggledCards);
 }
+
+
+// create a function for checking the match cards.
+
+function isMatch() {
+  if (toggledCards[0].firstElementChild.className ===
+       toggledCards[1].firstElementChild.className) {
+         toggledCards[0].classList.toggle('match');
+         toggledCards[1].classList.toggle('match');
+         toggledCards= [];
+         matched++;
+         setTimeout(function(){
+           win();
+         },700)
+       }
