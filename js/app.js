@@ -75,3 +75,23 @@ function shuffleDeck() {
 
 // adding an event listener card on the deck
 deck.addEventListener('click', appearCard);
+
+function appearCard (){
+  const press= event.target;
+  if (press.classList.contains('card') && !press.classList.contains('match') && toggledCards.length < 2 && !toggledCards.includes(press)){
+   // initilaize the timer for every new game
+     if (clockOff){
+       clockBegins();
+       clockOff= false;
+     }
+     // call the next two function to flip over the card and add them into array
+     toggleCard(press);
+     addToggledCard(press);
+     // if the array of cards has 2 cards only we gonna apply match  and move func on them
+     if (toggledCards.length === 2){
+       isMatch(press);
+       addMoves();
+       checkingScore();
+     }
+  }
+}
