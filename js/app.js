@@ -122,7 +122,7 @@ function isMatch() {
          matched++;
          setTimeout(function(){
            win();
-         },700)
+         },1000)
        }
        // if they are not matched will filp them over back again
        else {
