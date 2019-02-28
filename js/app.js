@@ -148,3 +148,14 @@ function isMatch() {
      removingStar();
    }
  }
+
+
+function removingStar(){
+  const stars= document.querySelectorAll('.stars li');
+  for (star of stars){
+    if(star.style.display !== 'none'){
+      star.style.display= 'none';
+      break
+    }
+  }
+}
