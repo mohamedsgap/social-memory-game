@@ -102,3 +102,10 @@ function toggleCard(press){
   press.classList.toggle('open');
   press.classList.toggle('show');
 }
+
+// create this card to push the filped card into the Array
+
+function addToggledCard(press){
+  toggledCards.push(press);
+  console.log(toggledCards);
+}
