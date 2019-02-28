@@ -124,3 +124,12 @@ function isMatch() {
            win();
          },700)
        }
+       // if they are not matched will filp them over back again
+       else {
+         setTimeout(function (){
+           toggleCard(toggledCards[0]);
+           toggleCard(toggledCards[1]);
+           toggledCards= [];
+         }, 1000);
+       }
+     }
