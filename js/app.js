@@ -205,3 +205,15 @@ function printModelStats() {
   movesStats.innerHTML= `Moves = ${moves}`;
   starsStats.innerHTML= `Stars = ${stars}`;
 }
+
+function getStars() {
+  stars= document.querySelectorAll('.stars li');
+  starCount= 0;
+  for (star of stars) {
+    if (star.style.display !== 'none'){
+      starCount +=1;
+    }
+  }
+  console.log(starCount);
+  return starCount;
+}
