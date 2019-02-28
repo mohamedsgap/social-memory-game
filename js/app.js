@@ -223,7 +223,7 @@ document.querySelector('.cancelModel').addEventListener('click', function(){
   toggleModel();
 });
 
-document.querySelector('.replayModel').addEventListener('clcik', replayGame);
+document.querySelector('.replayModel').addEventListener('click', replayGame);
 
 // function to reset the game!
 
