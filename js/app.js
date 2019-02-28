@@ -270,3 +270,9 @@ function win () {
     gameOver();
   }
 }
+
+function replayGame() {
+  resetGame();
+  toggleModel();
+  resetCards();
+}
