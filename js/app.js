@@ -95,3 +95,10 @@ function appearCard (){
      }
   }
 }
+
+// create a function to flip over the card
+
+function toggleCard(press){
+  press.classList.toggle('open');
+  press.classList.toggle('show');
+}
