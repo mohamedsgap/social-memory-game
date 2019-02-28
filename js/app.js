@@ -264,3 +264,9 @@ function resetCards() {
     card.className= 'card';
   }
 }
+
+function win () {
+  if (matched === allPairs){
+    gameOver();
+  }
+}
