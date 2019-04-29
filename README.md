@@ -34,6 +34,3 @@ The real-life game, players flip over cards to locate the pairs that match The g
 The memory game presents the first opportunity to fully combine your skills in HTML, CSS, and JavaScript into a large project. Aside from solidifying your skills with these three technologies, you'll discover how best to combine them in a complex application.
 
 
-### Contribution
-I am going to be so happy, if you can contribute on this project. The Next step I am going to make this project
-fully responsive on the other devices, so I can't wait to see your pull request in your own branch!
